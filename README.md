@@ -13,7 +13,11 @@ A base framework to create an API with GraphQL compatible. The database is based
 
 ### Local Host setup
 
-Once the project cloned into local machine, simply execute `yarn` and the package manager will install all necessary dependencies for the project. When all dependencies are installed, execute `yarn start` and the server will be up at `http://localhost:5000/`.
+Once the project cloned into local machine, simply execute `yarn` and the package manager will install all necessary dependencies for the project.
+
+The project also incorporated with JWT so make sure to have an `jwtSecret` environment variable (either through CLI or `.env` file). Please refer to `.sampleenv` for example. 
+
+When all dependencies are installed and environment variables are setup, execute `yarn start` and the server will be up at `http://localhost:5000/`.
 
 ## Develop
 
@@ -36,7 +40,8 @@ GraphQL endpoint is available at `http://localhost:5000/graphql`. In development
 ## File Structures
 
 This provides a brief overview of how the project is structured.
-```
+
+```file
 ├── README.md                                   # Important information regarding to the project
 ├── package.json                                # project's info and dependencies declaration
 ├── src/
