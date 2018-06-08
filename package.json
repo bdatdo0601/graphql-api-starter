@@ -1,0 +1,60 @@
+{
+    "name": "cheffer-api",
+    "version": "0.0.1",
+    "description": "GraphQL Implementation for Boltius Project",
+    "author": "Dat Do",
+    "license": "MIT",
+    "private": false,
+    "engine": {
+        "node": "10.0.0",
+        "yarn": "1.7.0"
+    },
+    "scripts": {
+        "clean": "rm -rf build && mkdir build",
+        "build-server": "babel -d ./build ./src -s",
+        "init-db": "nodemon --exec babel-node -- src/dbinit.js",
+        "start": "rm -rf ./node_modules/.cache/babel-loader && nodemon --exec babel-node -- src/index.js",
+        "build": "yarn clean && yarn build-server",
+        "init-db-production": "node ./build/dbinit.js",
+        "start-production": "NODE_ENV=production node ./build/index.js",
+        "test": "babel-node -- test/index.js"
+    },
+    "nodemonConfig": {
+        "delay": 1000
+    },
+    "dependencies": {
+        "accepts": "^1.3.5",
+        "apollo-errors": "^1.9.0",
+        "apollo-resolvers": "^1.1.0",
+        "aws-sdk": "^2.211.0",
+        "boom": "^7.2.0",
+        "confidence": "^3.0.2",
+        "dataloader": "^1.4.0",
+        "dotenv": "^5.0.1",
+        "fastify": "^1.3.0",
+        "fastify-jwt": "^0.2.1",
+        "fastify-mongodb": "^0.6.0",
+        "graphql": "^0.13.2",
+        "graphql-tools": "^2.21.0",
+        "graphql-voyager": "^1.0.0-rc.15",
+        "joi": "^13.2.0",
+        "mongodb": "^3.0.7",
+        "mongoose": "^5.0.15",
+        "promptly": "^3.0.3",
+        "stream": "^0.0.2"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.0.20",
+        "babel-eslint": "^8.2.3",
+        "babel-plugin-import-graphql": "^2.5.2",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-polyfill": "^6.0.16",
+        "babel-preset-env": "^1.6.1",
+        "eslint": "^4.19.1",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-prettier": "^2.6.0",
+        "nodemon": "^1.17.3",
+        "prettier": "^1.12.1"
+    }
+}

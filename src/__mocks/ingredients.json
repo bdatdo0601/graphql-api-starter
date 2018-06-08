@@ -1,0 +1,8 @@
+[
+    {
+        "id": "b3na7",
+        "name": "chicken",
+        "synonyms": ["poultry"],
+        "type": ["meat", "poultry", "frozen"]
+    }
+]

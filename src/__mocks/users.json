@@ -1,0 +1,30 @@
+[
+    {
+        "id": "fbyowq",
+        "firstName": "Bill",
+        "lastName": "Jones",
+        "username": "Bill634",
+        "email": "billjones123@gmail.com",
+        "passwordCode": "aba46492",
+        "dateJoined": "some date format",
+        "foodFilterParams": ["fabei", "fabuy"],
+        "favoriteRecipes": ["h3yfy23", "23bou"],
+        "favoriteRecipeTypes": ["nehsfyb", "nfeou"],
+        "viewedRecipes": [
+            {
+                "viewDate": "somedateformaat",
+                "recipeId": "nfse"
+            },
+            {
+                "viewDate": "somedateformaat",
+                "recipeId": "wfbeu"
+            }
+        ],
+        "friends": [
+            {
+                "friendId": "fbyowe",
+                "addedDate": "some date format"
+            }
+        ]
+    }
+]

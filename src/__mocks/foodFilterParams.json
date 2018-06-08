@@ -1,0 +1,14 @@
+[
+    {
+        "id": "3r2i3",
+        "name": "peanut",
+        "type": "allergy",
+        "restrictions": ["idOfPeanutrelatedFoodLikeg769wgf", "idOfPeanutrelatedFoodLikef6w794"]
+    },
+    {
+        "id": "3r2i3",
+        "name": "gluten",
+        "type": "preference",
+        "restrictions": ["wheat"]
+    }
+]
