@@ -1,8 +1,9 @@
 import { join } from "path";
 import { makeExecutableSchema } from "graphql-tools";
+import { importSchema } from "graphql-import";
 import resolvers from "./resolvers";
 
-import typeDefs from "./typeDefs/rootSchema.graphql";
+const typeDefs = importSchema(join(__dirname, "./typeDefs/rootSchema.graphql"));
 
 export default makeExecutableSchema({
     typeDefs,
